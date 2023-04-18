@@ -3,7 +3,7 @@
 <p>
 Intuito de armazenar as práticas do curso <strong>Full Stack Javascript da OneBitCode</strong>
 </p>
-<p>Link: <a href="https://gustarc.github.io/Curso_OneBitCode/">Menu Principal</a></p>
+<p>Link de Acesso: <a href="https://gustarc.github.io/Curso_OneBitCode/">Menu Principal</a></p>
 <br>
 
 <h3>&#9989 <strong>Atividades Concluidas!</strong></h3>
