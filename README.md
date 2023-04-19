@@ -29,5 +29,6 @@ Intuito de armazenar as práticas do curso <strong>Full Stack Javascript da OneB
                 <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_FilaDeEspera/index.html" target="_blank">Fila de Espera</a></li>
                 <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_PilhaDeCartas/index.html" target="_blank">Pilha de Cartas</a></li>
                 <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CadastroDeImoveis/index.html">Cadastro de Imóveis</a></li>
+                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CalculadoraGeometrica/index.html">Cadastro de Imóveis</a></li>
             </ul>
     </ul>
