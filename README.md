@@ -16,19 +16,23 @@ Intuito de armazenar as práticas do curso <strong>Full Stack Javascript da OneB
             <br>
         <li><strong>&#128187 Javascript</strong></li>
             <ul>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CadastroDeUsuario/index.html" target="_blank">Cadastro de Usuário</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_Calculador4Op/index.html" target="_blank">Calculadora de 4 operações (soma, subtração, multiplicação e divisão)</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CalculoDeDano/index.html" target="_blank">Jogo entre atacante e defensor - Calculo de dano</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CalculoDeMedidas/index.html" target="_blank">Conversor de medidas</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_ControleFinanceiro/index.html" target="_blank">Controle Financeiro</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_MenuInterativo/index.html" target="_blank">Menu Interativo</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_ProcurandoPalindromos/index.html" target="_blank">Procurando Palindromos</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_RoboDaTabuada/index.html" target="_blank">Robô da Tabuada</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_TesteDeVelocidade/index.html" target="_blank">Teste de Velocidade</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_VisitandoNovasCidades/index.html" target="_blank">Visitando novas cidades</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_FilaDeEspera/index.html" target="_blank">Fila de Espera</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_PilhaDeCartas/index.html" target="_blank">Pilha de Cartas</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CadastroDeImoveis/index.html">Cadastro de Imóveis</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CalculadoraGeometrica/index.html">Cadastro de Imóveis</a></li>
+                <li><strong>JS I - Lógica de Programação</strong></li>
+                <ul>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CadastroDeUsuario/index.html" target="_blank">Cadastro de Usuário</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_Calculador4Op/index.html" target="_blank">Calculadora de 4 operações (soma, subtração, multiplicação e divisão)</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CalculoDeDano/index.html" target="_blank">Jogo entre atacante e defensor - Calculo de dano</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CalculoDeMedidas/index.html" target="_blank">Conversor de medidas</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_ControleFinanceiro/index.html" target="_blank">Controle Financeiro</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_MenuInterativo/index.html" target="_blank">Menu Interativo</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_ProcurandoPalindromos/index.html" target="_blank">Procurando Palindromos</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_RoboDaTabuada/index.html" target="_blank">Robô da Tabuada</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_TesteDeVelocidade/index.html" target="_blank">Teste de Velocidade</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_VisitandoNovasCidades/index.html" target="_blank">Visitando novas cidades</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_FilaDeEspera/index.html" target="_blank">Fila de Espera</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_PilhaDeCartas/index.html" target="_blank">Pilha de Cartas</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CadastroDeImoveis/index.html">Cadastro de Imóveis</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CalculadoraGeometrica/index.html">Cadastro de Imóveis</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_SistemaVagasDeEmprego-DesafioFinal/index.html">Sistema Vagas de Emprego - Desafio Final</a></li>
+                </ul>
             </ul>
     </ul>
