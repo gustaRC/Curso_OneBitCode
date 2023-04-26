@@ -10,8 +10,8 @@ Intuito de armazenar as práticas do curso <strong>Full Stack Javascript da OneB
     <ul>
         <li><strong>&#127912 CSS</strong></li>
             <ul>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Módulo_CSS/Exercicio_TreinamentoAstronautas/index.html" target="_blank">Formatação site - Treinamento para astronautas</a></li>
-                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Módulo_CSS/Exercicio_RecriandoSite_Blog/index.html" target="_blank">Formatação site - Blog</a></li>
+                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_CSS/Exercicio_TreinamentoAstronautas/index.html" target="_blank">Formatação site - Treinamento para astronautas</a></li>
+                <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_CSS/Exercicio_RecriandoSite_Blog/index.html" target="_blank">Formatação site - Blog</a></li>
             </ul>
             <br>
         <li><strong>&#128187 Javascript</strong></li>
@@ -34,5 +34,7 @@ Intuito de armazenar as práticas do curso <strong>Full Stack Javascript da OneB
                     <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_CalculadoraGeometrica/index.html">Cadastro de Imóveis</a></li>
                     <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_Javascript/Exercicio_SistemaVagasDeEmprego-DesafioFinal/index.html">Sistema Vagas de Emprego - Desafio Final</a></li>
                 </ul>
+                <br>
+                <li><strong>JS II - DOM</strong></li>
             </ul>
     </ul>
