@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Escalação do Time</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Exercício DOM</h1>
+    <h2>Escalação do Time</h2>
+    <a href="../../index.html" style="border-radius: 10px; background-color: rgb(202, 202, 202); padding: 10px; margin: 10px; color: white; margin-left: 0px;"
+    ">Menu Principal</a>
+    <hr style="margin-top: 20px;">
+
+    <label for="positionPlayer">Posição</label>
+    <select name="positionSelect" id="positionPlayer">
+        <option value="ATQ">Ataque</option>
+        <option value="MEIA">Meia</option>
+        <option value="DEF">Defesa</option>
+        <option value="GOL">Goleiro</option>
+    </select>
+    <br>
+    <br>
+    <label for="namePlayer">Nome: </label>
+    <input type="text" name="namePlayer" id="namePlayer">
+    <br>
+    <br>
+    <label for="nPlayer">Nº do Jogador: </label>
+    <input type="number" name="nPlayer" id="nPlayer">
+    <br>
+    <br>
+    <button onclick="addPlayer()">Escalar Jogador</button>
+    <button onclick="removePlayer()">Remover Jogador</button>
+</body>
+</html>
