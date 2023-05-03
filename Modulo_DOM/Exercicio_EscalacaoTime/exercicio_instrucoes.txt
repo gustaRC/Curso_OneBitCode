@@ -18,4 +18,5 @@ de jogadores. Nele deverá ser possível:
       jogador e então exclui ele da lista na página.
     - Após o jogador ser removido o campo de texto deve ser limpo.
 
-Dica: lembrando que é possível acessar o texto de um input através da propriedade value.
+Dica: lembrando que é possível acessar
+o texto de um input através da propriedade value.
