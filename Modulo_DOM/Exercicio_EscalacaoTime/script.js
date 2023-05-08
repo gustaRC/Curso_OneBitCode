@@ -27,13 +27,17 @@ function addPlayer() {
     section.append(liName)
     section.append(liNumber ,document.createElement("br"))
     listPlayers.appendChild(section)
+    
+    console.log(listPlayers)
 }
 
 function removePlayer() {
     const listPlayers = document.getElementById("listPlayers")
 
     const sectionPlayer = document.getElementById("sectionPlayer")
-    // listPlayers.removeChild(sectionPlayer)
+    const removePlayerNumber = document.getElementById("removePlayerNumber")
+    listPlayers.removeChild(sectionPlayer)
 
+    console.log(removePlayerNumber.value)
     console.log(sectionPlayer)
 }
