@@ -37,8 +37,8 @@ Intuito de armazenar as práticas do curso <strong>Full Stack Javascript da OneB
                 <br>
                 <li><strong>JS II - DOM</strong></li>
                 <ul>
-                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_DOM/Exercicio_EscalacaoTime/index.html">Escalar Time</a></li>
-                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_DOM/Exercicio_CadastroDev/index.html">Cadastro Devs</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_DOM/Exercicio_EscalacaoTime/index.html" target="_blank">Escalar Time</a></li>
+                    <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_DOM/Exercicio_CadastroDev/index.html" target="_blank">Cadastro Devs</a></li>
                 </ul>
             </ul>
     </ul>
