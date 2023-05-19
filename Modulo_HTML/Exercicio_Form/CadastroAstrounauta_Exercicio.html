@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Astrounauta</title>
+  </head>
+  <body>
+    <h3>Cadastro Astrounauta</h3>
+    <form action="" method="get">
+      <label for="nome"><strong>Nome:</strong></label>
+      <input type="text" name="nome" id="nome" />
+      <br />
+      <br />
+      <label for="email"><strong>E-mail</strong></label>
+      <input type="email" name="email" id="email" autocomplete="off" />
+      <label for="senha"><strong>- Senha</strong></label>
+      <input type="password" name="senha" id="senha" autocomplete="off" />
+      <br />
+      <br />
+      <label for="dataNascimento"><strong>Data de nascimento:</strong></label>
+      <input type="date" name="dataNascimento" id="dataNascimento" />
+      <label for="foto"><strong>Foto:</strong></label>
+      <input type="file" name="foto" id="foto" />
+      <br />
+      <br />
+      <label for="nacio"><strong>Nacionalidade</strong></label>
+      <input type="" name="nacio" id="nacio" list="nacionalidade" />
+      <datalist id="nacionalidade">
+        <option value="americano"></option>
+        <option value="russo"></option>
+        <option value="latino"></option>
+        <option value="chinesa"></option>
+      </datalist>
+      <input type="radio" name="genero" id="m" />
+      <label for="m"><strong>M</strong></label>
+      <input type="radio" name="genero" id="f" />
+      <label for="f"><strong>F</strong></label>
+      <br />
+      <br />
+      <strong>Suas principais Qualidades</strong><br />
+      <input type="checkbox" name="int" id="int1" />
+      <label for="int1"><strong>Inteligencia |</strong></label>
+      <input type="checkbox" name="res" id="res" />
+      <label for="res"><strong>Resiliencia |</strong></label>
+      <input type="checkbox" name="pfis" id="pfis" />
+      <label for="pfis"><strong>Praparo Físico |</strong></label>
+      <input type="checkbox" name="edu" id="edu" />
+      <label for="edu"><strong>Educação</strong></label>
+      <br />
+      <br />
+      <textarea
+        name="sobreFuncionario"
+        id="sobreFuncionario"
+        cols="30"
+        rows="10"
+        placeholder="Por que você quer se tornar um astrôunauta?"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" placeholder="Criar" />
+    </form>
+    <a href="../../index.html" style="
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 10px;
+    background-color: rgb(202, 202, 202);
+    padding: 10px;
+    margin: 10px;
+    color: white;" "="">Menu Principal</a>
+  </body>
+</html>
