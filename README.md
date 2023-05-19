@@ -1,4 +1,5 @@
 # Curso_OneBitCode
+
 <h2>Curso da OneBitCode - Full Stack Javascript</h2>
 <p>
 Intuito de armazenar as práticas do curso <strong>Full Stack Javascript da OneBitCode</strong>
@@ -8,6 +9,16 @@ Intuito de armazenar as práticas do curso <strong>Full Stack Javascript da OneB
 
 <h3>&#9989 <strong>Atividades Concluidas!</strong></h3>
     <ul>
+        <li><strong>&#127968 HTML</strong></li>
+        <ul>
+            <li><a href="./Modulo_HTML/Exercicio_CriarSite/Exercicio_CriarSite_pag1.html">Criar primeiro site</a></li>
+            <li><a href="./Modulo_HTML/Exercicio_Form/CadastroAstrounauta_Exercicio.html">Form - Cadastro Astronauta</a></li>
+            <li><a href="./Modulo_HTML/Exercicio_Form/FormGoogle.html">Form - Formulário Google</a></li>
+            <li><a href="./Modulo_HTML/Exercicio_GuiaGalaxias/pag1_GuiaGalaxias_Exercicio.html">Guia de Galaxias</a></li>
+            <li><a href="./Modulo_HTML/Exercicio_ViagensnoSistemaSolar/listas_exercicio.html">Lists - Viagens no Sistema Solar</a></li>
+            <li><a href="./Modulo_HTML/Exercicio_MassaDosPlanetas/tabela_exercicio.html">Table - Massa dos planetas</a></li>
+            <br>
+        </ul>
         <li><strong>&#127912 CSS</strong></li>
             <ul>
                 <li><a href="https://gustarc.github.io/Curso_OneBitCode/Modulo_CSS/Exercicio_TreinamentoAstronautas/index.html" target="_blank">Formatação site - Treinamento para astronautas</a></li>
