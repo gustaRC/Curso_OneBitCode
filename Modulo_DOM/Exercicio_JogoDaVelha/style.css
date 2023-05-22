@@ -1,3 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+* {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #262626;
+  color: #f5f5f5;
+}
+
+.header1 {
+  display: flex;
+  margin: 0 auto;
+  max-width: 50%;
+  position: relative;
+  padding: 50px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.header1 h1 {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+#startBtn {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #F20587;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  border: 2px solid #F213A4;
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#startBtn:hover {
+  filter: brightness(0.9);
+}
+
 .btnCaseGame {
   padding: 20px;
 }

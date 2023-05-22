@@ -17,3 +17,15 @@ e não deve ser possível clicar naquela região novamente;
 na tela e as regiões da vitória devem ser destacadas de alguma forma;
 - Em caso de empate, uma mensagem de empate deve ser mostrada na tela;
 - Deve ser possível reiniciar o jogo para jogar novamente.
+
+const winGame = [
+    "btn1", "btn2", "btn3",
+    "btn4", "btn5", "btn6",
+    "btn7", "btn8", "btn9",
+    "btn1", "btn4", "btn7",
+    "btn2", "btn5", "btn8",
+    "btn3", "btn6", "btn9",
+    "btn1", "btn5", "btn9",
+    "btn3", "btn5", "btn7"
+]
+

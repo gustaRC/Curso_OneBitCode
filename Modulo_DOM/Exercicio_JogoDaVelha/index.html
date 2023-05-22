@@ -10,26 +10,38 @@
 </head>
 <body>
     <header>
-        <h1>Jogo da Velha</h1>
-        <label for="inputJogador">Nome:</label> <br>
-        <input type="text" id="inputJogadorX" class="inputJogador" placeholder="Jogador X"> 
-        <button id="startBtn">OK</button>
+        <div class="header1">
+            <h1>Jogo da Velha</h1>
+            <button id="startBtn">Começar Jogo!</button>
+        </div>
+        <div>
+            <p>Vez do Jogador: </p>
+            <input type="text" id="nameCurrentPlayer" value="" disabled>
+        </div>
+        
     </header>
     
     <main class="Game">
-        <button class="btnCaseGame" id="btn1" data-value=""></button>
-        <button class="btnCaseGame" id="btn2" data-value=""></button>
-        <button class="btnCaseGame" id="btn3" data-value=""></button> <br>
-        <button class="btnCaseGame" id="btn4" data-value=""></button>
-        <button class="btnCaseGame" id="btn5" data-value=""></button>
-        <button class="btnCaseGame" id="btn6" data-value=""></button> <br>
-        <button class="btnCaseGame" id="btn7" data-value=""></button>
-        <button class="btnCaseGame" id="btn8" data-value=""></button>
-        <button class="btnCaseGame" id="btn9" data-value=""></button>
+        <div class="line1">
+            <button class="btnCaseGame" id="btn1" data-value=""></button>
+            <button class="btnCaseGame" id="btn2" data-value=""></button>
+            <button class="btnCaseGame" id="btn3" data-value=""></button>
+        </div>
+        <div class="line2">
+            <button class="btnCaseGame" id="btn4" data-value=""></button>
+            <button class="btnCaseGame" id="btn5" data-value=""></button>
+            <button class="btnCaseGame" id="btn6" data-value=""></button>
+        </div>
+        <div class="line3">
+            <button class="btnCaseGame" id="btn7" data-value=""></button>
+            <button class="btnCaseGame" id="btn8" data-value=""></button>
+            <button class="btnCaseGame" id="btn9" data-value=""></button>
+        </div>
+
     </main>
 
     <footer>
-        <input type="text" value="" id="winner"disabled>
+        <input type="text" value="Aparecer o vencedor!" id="winner" disabled>
         <h3>Desenvolvido por: Gustavo Rodrigues</h3>
         <p>Destinado ao Exercício da OneBitCode</p>
     </footer>
