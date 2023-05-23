@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício - Jogo da Velha</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header1">
-            <h1>Jogo da Velha</h1>
-            <button id="startBtn">Começar Jogo!</button>
-        </div>
-        <div>
-            <p>Vez do Jogador: </p>
-            <input type="text" id="nameCurrentPlayer" value="" disabled>
-        </div>
-        
+      <div class="header1">
+        <h1>Jogo da Velha</h1>
+        <button id="startBtn">Começar Jogo!</button>
+      </div>
+      <div class="currentPlayerDiv">
+        <p>Vez do Jogador:</p>
+        <input type="text" id="nameCurrentPlayer" value="" disabled />
+      </div>
     </header>
-    
-    <main class="Game">
-        <div class="line1">
-            <button class="btnCaseGame" id="btn1" data-value=""></button>
-            <button class="btnCaseGame" id="btn2" data-value=""></button>
-            <button class="btnCaseGame" id="btn3" data-value=""></button>
-        </div>
-        <div class="line2">
-            <button class="btnCaseGame" id="btn4" data-value=""></button>
-            <button class="btnCaseGame" id="btn5" data-value=""></button>
-            <button class="btnCaseGame" id="btn6" data-value=""></button>
-        </div>
-        <div class="line3">
-            <button class="btnCaseGame" id="btn7" data-value=""></button>
-            <button class="btnCaseGame" id="btn8" data-value=""></button>
-            <button class="btnCaseGame" id="btn9" data-value=""></button>
-        </div>
 
+    <main class="Game">
+      <div class="line1">
+        <button class="btnCaseGame" id="btn1" data-value=""></button>
+        <button class="btnCaseGame" id="btn2" data-value=""></button>
+        <button class="btnCaseGame" id="btn3" data-value=""></button>
+      </div>
+      <div class="line2">
+        <button class="btnCaseGame" id="btn4" data-value=""></button>
+        <button class="btnCaseGame" id="btn5" data-value=""></button>
+        <button class="btnCaseGame" id="btn6" data-value=""></button>
+      </div>
+      <div class="line3">
+        <button class="btnCaseGame" id="btn7" data-value=""></button>
+        <button class="btnCaseGame" id="btn8" data-value=""></button>
+        <button class="btnCaseGame" id="btn9" data-value=""></button>
+      </div>
     </main>
 
     <footer>
-        <input type="text" value="Aparecer o vencedor!" id="winner" disabled>
-        <h3>Desenvolvido por: Gustavo Rodrigues</h3>
-        <p>Destinado ao Exercício da OneBitCode</p>
+      <input type="text" value="Aparecer o vencedor!" id="winner" disabled />
+      <h3>Desenvolvido por: Gustavo Rodrigues</h3>
+      <p>Destinado ao Exercício da OneBitCode</p>
     </footer>
-</body>
+  </body>
 </html>

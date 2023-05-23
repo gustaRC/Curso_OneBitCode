@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap");
 
 * {
   font-family: Rubik, sans-serif;
@@ -12,15 +12,24 @@ body {
   color: #f5f5f5;
 }
 
-.header1 {
+header {
   display: flex;
   margin: 0 auto;
-  max-width: 50%;
-  position: relative;
-  padding: 50px;
+  max-width: 60%;
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  padding: 50px;
+  padding-bottom: 30px;
 }
 
 .header1 h1 {
@@ -31,13 +40,13 @@ body {
 #startBtn {
   padding: 15px;
   border-radius: 10px;
-  background-color: #F20587;
+  background-color: #f20587;
   font-weight: 500;
   font-size: 16px;
   color: #ffffff;
-  border: 2px solid #F213A4;
+  border: 2px solid #f213a4;
   /* offset-x | offset-y | blur-radius | color */
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 
@@ -47,4 +56,16 @@ body {
 
 .btnCaseGame {
   padding: 20px;
+}
+
+.currentPlayerDiv {
+  display: inline-block;
+}
+
+.currentPlayerDiv p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.currentPlayerDiv input {
 }
