@@ -11,8 +11,11 @@ let inputCurrentPlayer = document.getElementById("nameCurrentPlayer");
 document.getElementById("startBtn").addEventListener("click", function () {
   const namePlayerX = prompt("Nome do Jogador X:");
   const namePlayerO = prompt("Nome do Jogador O:");
-  inputCurrentPlayer.value = namePlayerX;
 
+
+  document.getElementById("startBtn").innerText = "Recomeçar Jogo!"
+  
+  inputCurrentPlayer.value = namePlayerX;
   let btnGame = document
     .querySelectorAll(".btnCaseGame")
     .forEach(function (ev) {
@@ -21,12 +24,15 @@ document.getElementById("startBtn").addEventListener("click", function () {
         if (round) {
           playerX.push(btn.id);
           btn.innerText = "X";
+          btn.dataset.value = "X"
+          btn.classList.add("playerX")
           round = false;
           inputCurrentPlayer.value = namePlayerO;
-          console.log(playerX);
         } else {
           playerO.push(btn.id);
           btn.innerText = "O";
+          btn.dataset.value = "O"
+          btn.classList.add("playerO")
           round = true;
           inputCurrentPlayer.value = namePlayerX;
         }
@@ -38,9 +44,17 @@ document.getElementById("startBtn").addEventListener("click", function () {
     });
 
   function winnerFunction() {
+    let btn = document.querySelectorAll(".btnCaseGame")
+
+    let currentPlayerName = round ? namePlayerO : namePlayerX
+
     let currentTarget = [playerX, playerO];
     currentTarget.forEach(function (ev) {
-      if (ev.includes("btn1") && ev.includes("btn2") && ev.includes("btn3")) {
+      if (ev.includes("btn1") &&
+          ev.includes("btn2") &&
+          ev.includes("btn3")
+      ) {
+        colorCase();
         infoWin();
       } else if (
         ev.includes("btn4") &&
@@ -87,8 +101,30 @@ document.getElementById("startBtn").addEventListener("click", function () {
       }
     });
 
+    function colorCase(b1, b2, b3) {
+      let currentPlayerColor = round ? "O" : "X"
+
+      btn
+
+
+
+
+
+    }
+
+
     function infoWin() {
-      console.log("Teste");
+      
+      let btnGame = document.querySelectorAll(".btnCaseGame")
+      btnGame.forEach(function (ev) {
+        ev.setAttribute("disabled", true)
+      })
+
+      let winner = document.getElementById("winner")
+
+      winner.value = "🏆 " + currentPlayerName + " 🏆"
+
+      document.getElementById("nameCurrentPlayer").value = "Jogue Novamente! 😁"
     }
   }
 });
