@@ -30,7 +30,7 @@ header {
 h1 {
   font-weight: 500;
   font-size: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #startBtn {
@@ -153,7 +153,7 @@ footer > p {
 }
 
 .playerX {
-  color: #E9A411;
+  color: #e9a411;
   transition: none;
 }
 
@@ -163,11 +163,56 @@ footer > p {
 }
 
 .caseWinX {
-  background-color: #E9A411; 
+  background-color: #e9a411 !important;
   color: #fff;
 }
 
 .caseWinO {
-  background-color: #01a79e;
+  background-color: #01a79e !important;
   color: #fff;
+}
+
+#btn1 {
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 20px 4px 4px 4px;
+}
+
+#btn2 {
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 4px 4px 4px 4px;
+}
+
+#btn3 {
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 4px 20px 4px 4px;
+}
+
+#btn4 {
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 4px 4px 4px 4px;
+}
+
+#btn5 {
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 4px 4px 4px 4px;
+}
+
+#btn6 {
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 4px 4px 4px 4px;
+}
+
+#btn7 {
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 4px 4px 4px 20px;
+}
+
+#btn8 {
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 4px 4px 4px 4px;
+}
+
+#btn9 {
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 4px 4px 20px 4px;
 }

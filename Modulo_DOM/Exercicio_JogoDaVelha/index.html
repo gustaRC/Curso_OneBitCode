@@ -10,35 +10,40 @@
   </head>
   <body>
     <header>
-        <h1>Jogo da Velha</h1>
-        <div class="currentPlayerDiv">
-          <p>Vez do Jogador:</p>
-          <input type="text" id="nameCurrentPlayer" value="" disabled />
-          <button id="startBtn">Começar Jogo!</button>
-    </div>
+      <h1>Jogo da Velha</h1>
+      <div class="currentPlayerDiv">
+        <p>Vez do Jogador:</p>
+        <input type="text" id="nameCurrentPlayer" value="" disabled />
+        <button id="startBtn">Começar Jogo!</button>
+      </div>
     </header>
 
     <main class="Game">
       <div class="line1">
-        <button class="btnCaseGame" id="btn1" data-value=""></button>
-        <button class="btnCaseGame" id="btn2" data-value=""></button>
-        <button class="btnCaseGame" id="btn3" data-value=""></button>
+        <button class="btnCaseGame" id="btn1"></button>
+        <button class="btnCaseGame" id="btn2"></button>
+        <button class="btnCaseGame" id="btn3"></button>
       </div>
       <div class="line2">
-        <button class="btnCaseGame" id="btn4" data-value=""></button>
-        <button class="btnCaseGame" id="btn5" data-value=""></button>
-        <button class="btnCaseGame" id="btn6" data-value=""></button>
+        <button class="btnCaseGame" id="btn4"></button>
+        <button class="btnCaseGame" id="btn5"></button>
+        <button class="btnCaseGame" id="btn6"></button>
       </div>
       <div class="line3">
-        <button class="btnCaseGame" id="btn7" data-value=""></button>
-        <button class="btnCaseGame" id="btn8" data-value=""></button>
-        <button class="btnCaseGame" id="btn9" data-value=""></button>
+        <button class="btnCaseGame" id="btn7"></button>
+        <button class="btnCaseGame" id="btn8"></button>
+        <button class="btnCaseGame" id="btn9"></button>
       </div>
     </main>
 
     <footer>
       <p>🥇 Vencedor:</p>
-      <input type="text" value="Quem será o ganhador? 😶" id="winner" disabled />
+      <input
+        type="text"
+        value="Quem será o ganhador? 😶"
+        id="winner"
+        disabled
+      />
       <h3>Desenvolvido por: Gustavo Rodrigues</h3>
       <p>Destinado ao Exercício da <strong>OneBitCode</strong>🤘</p>
     </footer>
