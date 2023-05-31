@@ -10,10 +10,16 @@ document.getElementById("startBtn").addEventListener("click", function () {
 
   let cont = 0;
 
-  let round = true;
+//declaração de variavel booleana para definir a vez de cada player, adicionar o CSS, armazenar na variavel de cada player
+let round = true;
 
+//BOTAO COMEÇAR JOGO!
+//addEL ao clicar o botão de "Começar Jogo!"
+document.getElementById("startBtn").addEventListener("click", function () {
+  //função armazenando tds as features iniciais do jogo
   startGame();
 
+  //perguntando o nome de cada jogador e armazenando elas para serem mostradas na vez de cada jogador
   const namePlayerX = prompt("Nome do Jogador X:");
   const namePlayerO = prompt("Nome do Jogador O:");
 
@@ -26,7 +32,8 @@ document.getElementById("startBtn").addEventListener("click", function () {
     .querySelectorAll(".btnCaseGame")
     .forEach(function (ev) {
       ev.addEventListener("click", function (btnCase) {
-
+        console.log("round: " + round);
+        //variavel q armazenara o botao q foi pressionado naquele momento em especifico
         let btn = btnCase.currentTarget;
 
         if (round) {
@@ -37,7 +44,9 @@ document.getElementById("startBtn").addEventListener("click", function () {
           btn.classList.add("playerX");
 
           inputCurrentPlayer.value = namePlayerO;
-          console.log(playerX)
+          //transformando o round em false para na proxima rodada cair no else na estrutura de condição
+          round = false;
+          console.log("X: " + playerX);
         } else {
           playerO.push(btn.id);
           btn.innerText = "O";
@@ -45,6 +54,9 @@ document.getElementById("startBtn").addEventListener("click", function () {
           btn.classList.add("playerO");
 
           inputCurrentPlayer.value = namePlayerX;
+          //transformando o round em true para na proxima rodada cair no if na estrutura de condição
+          round = true;
+          console.log("O: " + playerO);
           console.log(playerO)
         }
 
@@ -129,7 +141,7 @@ document.getElementById("startBtn").addEventListener("click", function () {
         document.getElementById("btn5").classList.add(currentPlayerClass);
         document.getElementById("btn7").classList.add(currentPlayerClass);
         infoWin();
-      } else if (cont == 17) {
+      } else if (cont == 17) { //caso o contador seja igual a 17 ocorrera o processo de empate
         nobodyWin();
       }
       cont += 1;
@@ -166,6 +178,9 @@ document.getElementById("startBtn").addEventListener("click", function () {
       ev.innerText = "";
       ev.classList.remove("playerX", "playerO", "caseWinX", "caseWinO");
     });
+    //alterando o valor do round para o contrario do valor atual
+    round = !round;
+    //limpando as variaveis armazendoras
     playerO = [];
     playerX = [];
     cont = 0;
