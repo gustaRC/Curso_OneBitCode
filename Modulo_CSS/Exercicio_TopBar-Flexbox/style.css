@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.topBar {
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.smallLogo {
+    width: 5vh;
+}
+
+.centerLogo {
+    width: 30vh;
+}
+
+.optionsBTNs {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 10px;
+}
+
+.btnItem {
+    color: white;
+    border: 1px outset white;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.btnItem:hover {
+    cursor: pointer;
+    border: 1px outset #ca0136;
+    transition: .15s;
+}
