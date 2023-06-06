@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.conteiner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-page img {
+    width: 26vh;
+}
+
+.head-page {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    background-color: #353535;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnsHead button {
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    background: transparent;
+    margin-left: 5vh;
+    font-size: 18px;
+    padding: 10px;
+    transition: .5s;
+}
+
+.btnsHead button:hover {
+    border-bottom: 3px solid rgb(0, 0, 0);
+    transition: .5s;
+}
+
+.btnsHead a {
+    color: #ffffff;
+}
+
+.main-content {
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2vh;
+}
+
+.contentPrimary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 4vh;
+}
+
+.apresentation-text {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.box-content {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 30vh);
+    grid-auto-rows: minmax(200px, 300px);
+    gap: 2vh;
+    row-gap: 8vh;
+}
+
+.boxItem {
+    display: flex;
+    flex-direction: column;
+    width: 30.5vh;
+    height: 40vh;
+    padding: 2px;
+    padding-right: 6px;
+}
+
+.boxItem p {
+    font-size: 18px;
+}
+
+.boxItem > div{
+    position: relative;
+    width: 30vh;
+    height: 20vh;
+    border-radius: 10px;
+}
+
+.boxe {
+    background: url(./img/boxe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.crossfit {
+    background: url(./img/crossfit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.natacao {
+    background: url(./img/natacao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.roupas {
+    background: url(./img/roupas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.basquete {
+    background: url(./img/basquete.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.corrida {
+    background: url(./img/corrida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.surf {
+    background: url(./img/surf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.trilha {
+    background: url(./img/trilha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tenis {
+    background: url(./img/tenis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.box-article {
+    background-color: #353535;
+    padding: 4vh;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+}
+
+.boxItemAticle {
+    margin-bottom: 3vh;
+}
+.boxItemAticle h3 {
+    padding-top: 2vh;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.boxItemAticle > div{
+    width: 25vh;
+    height: 15vh;
+    border-radius: 10px;
+}
+
+.bicicletas {
+    background: url(./img/bicicletas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.skate {
+    background: url(./img/skate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.futebolAmericano {
+    background: url(./img/futebolAmericano.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.yoga {
+    background: url(./img/yoga.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.esportesDeFrio {
+    background: url(./img/esportesNaNeve.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footerPage {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: #353535;
+}
+
+.footerPage img {
+    width: 26vh;
+}
+
+.footerPage h3 {
+    color: white;
+    font-weight: 500;
+}
+
+/* HOVER's */
+
+.boxItem:hover {
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: .15s;
+}

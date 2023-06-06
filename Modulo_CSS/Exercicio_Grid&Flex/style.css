@@ -39,7 +39,7 @@ body {
 }
 
 .main-content {
-    flex: 1 0 400px;
+    flex: 1 0 auto;
     display: grid;
     padding: 10px;
     grid-template-columns: repeat(3, 1fr);
@@ -54,8 +54,6 @@ body {
 .item {
     background-color: white;
     border: 2px solid black;
-    width: auto;
-    height: auto;
 }
 
 .item1 {
@@ -75,4 +73,16 @@ body {
 }
 .item6 {
     grid-area: item6;
+}
+
+@media (max-width: 780px) {
+    .main-content {
+        grid-template-areas: 
+        "item1 item1 item1"
+        "item2 item2 item2"
+        "item3 item3 item3"
+        "item4 item4 item4"
+        "item5 item5 item5"
+        "item6 item6 item6";
+    }
 }
