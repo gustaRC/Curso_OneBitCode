@@ -4,6 +4,7 @@
 const main = document.querySelector("main")
 
 //root será utilizado para manipular o tema da página
+//localizado no css
 const root = document.querySelector(":root")
 
 //adiquirir o input onde será mostrado o calculo a ser realizado
@@ -26,6 +27,7 @@ document.querySelectorAll(".charKey").forEach(function (charKeyBtn) {
     })
 })
 
+//limpar input
 document.getElementById("clear").addEventListener("click", function () {
     input.value = ""
     input.focus()
@@ -33,6 +35,7 @@ document.getElementById("clear").addEventListener("click", function () {
 
 //addEventListener no input quando uma tecla for pressionada
 input.addEventListener("keydown", function(ev) {
+    //previne o evento padrao, logo, o registro da tecla pressionada
     ev.preventDefault()
     //ev.key é a tecla associada ao evento, logo, a tecla que o usuario pressionou
     if (allowedKeys.includes(ev.key)) {
@@ -60,10 +63,10 @@ function calculate() {
     resultInput.classList.add("error")
     
     //SITEMA PARA ERRO: ao aperta o botao result, por padrao será mostrado a mensagem de erro
-    //e como "deu" erro no codigo ao chegar no eval o codigo será brecado
-    //sendo q, caso n ocorra o erro, logo, caso n ocorra o breck no eval
-    //o resultado aparece e será removida a classe error que caracteriza o input caso ocoorra erro
-    //td isso acontencedo em poucos milesimos
+    //e como "deu" erro no codigo ao chegar na função eval o codigo será brecado
+    //sendo q, caso n ocorra o erro, logo, caso n ocorra o breck na função eval
+    //o resultado aparece e será removida a classe error que caracteriza o input caso ocorra erro
+    //td isso acontencedo em poucos milesimos, o usuario n perceberá
 
     //função eval interpreta o código e o executa. CUIDADO COM ESTÁ FUNÇÃO!!!
     const result = eval(input.value)

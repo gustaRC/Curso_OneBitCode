@@ -58,7 +58,8 @@ a mediana é calculada através da média aritmética simples desses dois númer
     // porque 8 está no centro da sequência
     ```
     
-- **Moda:** Pode ser calculada encontrando o valor que mais se repete em um dado conjunto.
+- **Moda:** Pode ser calculada encontrando o valor que mais
+se repete em um dado conjunto.
     
     Exemplo:
 
