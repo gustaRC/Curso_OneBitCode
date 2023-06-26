@@ -1,0 +1,14 @@
+{
+  "name": "dayjs-exercicio",
+  "version": "1.0.0",
+  "description": "exercicio onebitcode",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Rodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.8"
+  }
+}
