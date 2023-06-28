@@ -2,13 +2,14 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    index: "./src/index.js",
+    index: "./src/build.js",
+    teste: "./src/index.js"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].exercicio.js",
   },
-  mode: "development",
+  mode: "production",
   module: {
     rules: [
       {
