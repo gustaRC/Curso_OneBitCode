@@ -1,12 +1,9 @@
 class Comment {
-    constructor(...comments) {
-        this.comments = comments
-        this.addComment = () => this.comments.unshift(comments)
+    constructor(username, content) {
+        this.username = username;
+        this.comment = content;
+        this.createdAt = new Date();
     }
-
-    // addComment(...comm) {
-    //     this.comments.unshift(comm)
-    // }
-}   
+}
 
 module.exports = Comment

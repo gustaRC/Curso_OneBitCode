@@ -1,12 +1,16 @@
 const Comment = require("./Comment.js")
-
-
 class Post {
-    constructor(...com) {
-        this.comments = new Comment(com)
+    constructor(title, body, author) {
+        this.title = title
+        this.body = body
+        this.author = author
+        this.comments = []
+        this.createdAt = new Date();
+    }
+
+    addComment(username, content) {
+        this.comments.push(new Comment(username, content))
     }
 }
 
-const teste = new Post("teste", "teste", "teste")
-console.log(teste.comments)
-teste.addComment("teste", "teste")
+module.exports = Post
