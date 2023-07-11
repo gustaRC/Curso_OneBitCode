@@ -1,20 +1,28 @@
 export class Component {
-    #ElementDOM
+    #elementDOM = null
 
-    constructor(DOM, typeDOM) {
-        this.#ElementDOM = DOM
-        this.buildThis = this.build(typeDOM)
+    constructor(tag, parent, options) {
+        this.tag = tag
+        this.parent = parent
+        this.options = options
+        this.build()
     }
 
-    valueDOM() {
-        console.log(this.#ElementDOM)
+    getElement() {
+        return this.#elementDOM
     }
 
-    build(typeDOM) {
-        document.createElement(typeDOM)
+    build() {
+        this.#elementDOM = document.createElement(this.tag)
+        Object.assign(this.#elementDOM, this.options)
+        return this
     }
 
-    render(x) {
-        document.body.appendChild(x)
+    render() {
+        if (this.parent instanceof Component) {
+            this.parent.getElement().append(this.#elementDOM)
+        } else {
+            document.querySelector(this.parent).append(this.#elementDOM)
+        }
     }
 }
