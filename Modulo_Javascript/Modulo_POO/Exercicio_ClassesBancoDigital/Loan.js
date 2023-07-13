@@ -2,12 +2,11 @@
 export class Loan {
     static #taxaJuros = 0
 
-    constructor() {
-        
+    constructor(valor, dataCriacao, parcelas) {
+
     }
 
-    get getTaxaJuros() {
+    static get getTaxaJuros() {
         return 
     }
-    
 }
