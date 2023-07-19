@@ -2,21 +2,22 @@ import { Installment } from "./Installment";
 
 //EMPRESTIMO
 export class Loan {
-    static #taxaJuros = 0
+    static #taxaJuros = 1.05
 
-    constructor(valor, dataCriacao, qtdeParcelas) {
+    constructor(valor, parcelas) {
         this.valor = valor;
-        this.dataCriacao = dataCriacao;
-        this.parcelas = new Installment(valor, qtdeParcelas);
+        this.parcelas = []
+        for(let i = 1; i <= parcelas; i++) {
+            this.parcelas.push(new Installment((value * Loan.#taxaJuros) / parcelas, i))
+        }
+        this.dataCriacao = new Date();
     }
 
-    static get getTaxaJuros() {
-        return this.#taxaJuros
+    static get taxaJuros() {
+        return Loan.#taxaJuros
     }
 
-    static set setTaxaJuros(taxaJuros) {
-        this.#taxaJuros = taxaJuros
-    }
-
-    
+    static set taxaJuros(novaTaxa) {
+        Loan.#taxaJuros = 1 + (novaTaxa / 100)
+    }    
 }

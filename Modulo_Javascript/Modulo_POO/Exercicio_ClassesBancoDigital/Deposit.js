@@ -1,7 +1,7 @@
 //DEPOSITO
 export class Deposit {
-    constructor(valor, dataCriacao) {
+    constructor(valor) {
         this.valor = valor;
-        this.dataCriacao = dataCriacao;
+        this.dataCriacao = new Date();
     }
 }
