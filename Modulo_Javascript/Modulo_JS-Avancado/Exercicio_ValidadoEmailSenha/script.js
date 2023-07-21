@@ -12,6 +12,13 @@ function validacaoEmail(email) {
     }
 }
 
+function resetarStyleForm() {
+    Object.entries(userInputs).forEach(([key,value]) => {
+        value.classList.remove('sucesso', 'erro')
+        document.querySelector('#')
+    })
+}
+
 const userInputs = {
     email: document.querySelector('#email-input'),
     senha: document.querySelector('#senha-input')
