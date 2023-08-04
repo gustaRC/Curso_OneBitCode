@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Ola, mundo!",
+      "content": "Lorem ipson Lorem ipson Lorem ipson",
+      "author": "Fulano"
+    },
+    {
+      "id": 2,
+      "title": "Tchau, mundo!",
+      "content": "Lorem ipson Lorem ipson Lorem ipson",
+      "author": "Sicrano"
+    },
+    {
+      "title": "teste",
+      "author": "teste",
+      "content": "teste",
+      "id": 3
+    }
+  ]
+}

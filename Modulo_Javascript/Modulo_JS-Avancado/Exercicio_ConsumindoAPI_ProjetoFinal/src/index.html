@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças Pessoais</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="module" src="./scripts/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <img src="./img/iconmonstr-coin-2-72.png" alt="money-icon">
+                <h1>Finanças Pessoais</h1>
+            </div>
+        </header>
+
+        <section class="section-content">
+            <form id="formOp" method="post" action="http://localhost:3000/transacoes">
+                <span class="title-op">
+                    <img src="img/iconmonstr-banknote-13-72.png" alt="money-op-icon">
+                    <h2>Adicionar Operação</h2>
+                </span>
+                <label for="nome" class="label-form-op">Nome</label>
+                <input type="text" id="nomeForm" name="nome" class="input-form-op" style="margin-bottom: 14px;" required>
+                <label for="valor" class="label-form-op">Valor</label>
+                <div class="value-div-op">
+                    <p>R$</p>
+                    <input type="number" id="valorForm" name="valor" placeholder="000.00" class="input-form-op" required>
+                </div>
+                <button type="submit" id="saveButton">Salvar</button>
+            </form>
+            <div>
+                <div class="div-saldoTotal">
+                    <h2>Saldo Total</h2>
+                    <span>
+                        <p>R$</p>
+                        <h2 id="saldoTotal">1234151</h2>
+                    </span>
+                </div>
+                <div class="div-transacoes">
+                    <h2>Transações</h2>
+                    <div id="painel-transacoes">
+                        <span class="indicacoes-transacoes">
+                            <p>Nome</p>
+                            <p class="segundo-ind">Valor</p>
+                            <p class="terceiro-ind">Opções</p>
+                        </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

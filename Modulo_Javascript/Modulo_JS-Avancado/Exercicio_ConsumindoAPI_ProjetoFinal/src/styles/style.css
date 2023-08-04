@@ -1,0 +1,256 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::selection {
+    background-color: #ffffff5e;
+}
+
+body {
+    background-color: #252525;
+    color: #ffffff;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+header {
+    display: flex;
+    align-items:center;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #04C4D9;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+header div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content {
+    margin: 40px;
+    height: auto;
+    display: flex;
+    gap: 40px;
+}
+
+.section-content div{
+    width: 100%;
+}
+
+#formOp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    height: 350px;
+    padding: 20px;
+    background-color: #ffffff21;
+    border: 2px solid #ffffff06;
+    border-radius: 5px;
+}
+
+.value-div-op{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.value-div-op p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #04C4D9;
+}
+#saveButton {
+    height: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #04C4D9;
+    border: 0;
+    border-radius: 8px;
+    font-size: 18px;
+
+}
+
+.section-content form button:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+.title-op {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.title-op h2{
+    font-size: 20px;
+}
+
+.title-op img {
+    width: 50px;
+}
+
+.label-form-op {
+    margin-bottom: 5px;
+}
+
+.input-form-op {
+    width: 100%;
+    height: 35px;
+    padding: 6px;
+    padding-left: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+    border: 2px solid #afafaf6c;
+}
+
+.div-saldoTotal {
+    background-color: #ffffff21;
+    border: 2px solid #ffffff06;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.div-saldoTotal span {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.div-saldoTotal span p {
+    color: #04C4D9;
+    font-weight: 700;
+}
+
+.div-transacoes {
+    margin-top: 40px;
+    min-height: 500px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-transacoes h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.span-transacoes {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    height: 60px;
+    /* background-color: #04C4D9; */
+    border-bottom: 2px solid #ffffffad;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.span-transacoes div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+.span-transacoes div h3 {
+    font-size: 22px;
+}
+
+.span-transacoes p {
+    font-size: 18px;
+}
+
+.editar {
+    background-color: #04C4D9;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    border: 2px solid #ffffff2c;
+    border-radius: 4px;
+    margin-left: 120px;
+}
+
+.editar:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+} 
+
+.nomeTransacoes {
+    width: 400px;
+}
+
+.excluir {
+    background-color: #d93604;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    border: 2px solid #ffffff1a;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.excluir:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+} 
+
+.indicacoes-transacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.534);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 16px;
+}
+
+.segundo-ind {
+    padding-left: 38px;
+}
+
+.terceiro-ind {
+    padding-right: 80px;
+}
