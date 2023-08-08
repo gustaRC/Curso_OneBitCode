@@ -1,5 +1,5 @@
 {
-  "name": "Exercicio_ConsumindoAPI_ProjetoFinal",
+  "name": "exercicio_consumindoapi_projetofinal",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,5 @@
   "dependencies": {
     "json-server": "^0.17.3"
   },
-  "devDependencies": {},
   "description": ""
 }

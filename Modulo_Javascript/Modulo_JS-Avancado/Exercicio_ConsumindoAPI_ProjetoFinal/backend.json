@@ -1,14 +1,19 @@
 {
   "transacoes": [
     {
-      "id": 1,
-      "nome": "Lorem ipson",
-      "valor": 100
+      "nome": "teste1",
+      "valor": "123",
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "Lorem ipson2",
-      "valor": -100
+      "nome": "teste2",
+      "valor": "123",
+      "id": 2
+    },
+    {
+      "nome": "123 ",
+      "valor": "124",
+      "id": 3
     }
   ]
 }
