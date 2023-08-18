@@ -21,7 +21,7 @@ export function criarSpan(transacoes) {
 
   const bExcluir = document.createElement("button");
   bExcluir.id = `bExcluir-${transacoes.id}`;
-  bExcluir.dataset.num = document.querySelectorAll();
+  bExcluir.setAttribute("data-num", transacoes.id);
   bExcluir.classList.add("excluir");
   bExcluir.textContent = "Excluir";
 

@@ -14,13 +14,15 @@ export function excluirTransacao() {
     el.addEventListener("click", async () => {
       excluirSpan(el);
 
-      const response = await fetch("http://localhost:3000/transacoes" + id, {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(op),
-      });
+      const response = await fetch(
+        "http://localhost:3000/transacoes/" + el.dataset.num,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
     });
   });
 }
