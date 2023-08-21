@@ -2,6 +2,7 @@ export function criarSpan(transacoes) {
   const Pnome = document.createElement("p");
   Pnome.classList.add("nomeTransacoes");
   Pnome.textContent = transacoes.nome;
+  Pnome.id = `nomeTransacao-${transacoes.id}`
 
   const h4 = document.createElement("h4");
   h4.textContent = "R$";
@@ -10,12 +11,14 @@ export function criarSpan(transacoes) {
   h3.classList.add("valorTransacoes");
   //h3.textContent = new Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(transacoes.valor)
   h3.textContent = transacoes.valor;
+  h3.id = `valorTransacao-${transacoes.id}`
 
   const div = document.createElement("div");
   div.append(h4, h3);
 
   const bEditar = document.createElement("button");
   bEditar.id = `bEditar-${transacoes.id}`;
+  bEditar.setAttribute("data-num", transacoes.id);
   bEditar.classList.add("editar");
   bEditar.textContent = "Editar";
 

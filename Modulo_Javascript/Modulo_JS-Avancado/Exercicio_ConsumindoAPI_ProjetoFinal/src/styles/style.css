@@ -58,7 +58,7 @@ header div {
     width: 100%;
 }
 
-#formOp {
+.formOp {
     display: flex;
     flex-direction: column;
     justify-content: center;
