@@ -14,7 +14,7 @@ export function excluirTransacao() {
     el.addEventListener("click", async () => {
       excluirSpan(el);
 
-      const response = await fetch(
+      await fetch(
         "http://localhost:3000/transacoes/" + el.dataset.num,
         {
           method: "DELETE",

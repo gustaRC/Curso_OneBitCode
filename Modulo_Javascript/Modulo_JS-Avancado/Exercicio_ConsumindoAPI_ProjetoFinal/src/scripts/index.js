@@ -6,8 +6,8 @@ import { saldoTotal } from "./saldoTotal.js";
 function funcoesPadroes() {
   excluirTransacao();
   saldoTotal()
+  bEditar()
 }
-
 
 document.addEventListener("DOMContentLoaded", async () => {
   const spanTransacoes = await fetch("http://localhost:3000/transacoes").then(
@@ -15,20 +15,22 @@ document.addEventListener("DOMContentLoaded", async () => {
   );
   spanTransacoes.forEach(criarSpan);
   funcoesPadroes()
-  bEditar()
 });
 
-const formOP = document.getElementById("formOp");
+let formOP = document.getElementById("formOp");
+
+let valorForm = document.getElementById("valorForm");
+let nomeForm = document.getElementById("nomeForm");
 
 if (formOP.dataset.metodo === "post") {
   formOP.addEventListener("submit", async (ev) => {
     ev.preventDefault();
-  
+
     const op = {
-      nome: document.querySelector("#nomeForm").value,
-      valor: document.querySelector("#valorForm").value,
+      nome: nomeForm.value,
+      valor: valorForm.value,
     };
-  
+
     const response = await fetch("http://localhost:3000/transacoes", {
       method: "POST",
       headers: {
@@ -36,13 +38,11 @@ if (formOP.dataset.metodo === "post") {
       },
       body: JSON.stringify(op),
     });
-  
+
     const dadosSalvos = await response.json();
     formOP.reset();
     criarSpan(dadosSalvos);
-    funcoesPadroes();
     bEditar()
+    funcoesPadroes();
   });
 }
-
-
