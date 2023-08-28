@@ -3,16 +3,21 @@
     {
       "nome": "1",
       "valor": "1",
-      "id": 2
-    },
-    {
-      "nome": "teste3",
-      "valor": "3",
-      "id": 3
+      "id": 1
     },
     {
       "nome": "2",
       "valor": "2",
+      "id": 2
+    },
+    {
+      "nome": "1teste",
+      "valor": "11",
+      "id": 3
+    },
+    {
+      "nome": "neg",
+      "valor": "-60",
       "id": 4
     }
   ]

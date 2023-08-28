@@ -22,6 +22,7 @@ let formOP = document.getElementById("formOp");
 let valorForm = document.getElementById("valorForm");
 let nomeForm = document.getElementById("nomeForm");
 
+bEditar()
 if (formOP.dataset.metodo === "post") {
   formOP.addEventListener("submit", async (ev) => {
     ev.preventDefault();
@@ -42,7 +43,6 @@ if (formOP.dataset.metodo === "post") {
     const dadosSalvos = await response.json();
     formOP.reset();
     criarSpan(dadosSalvos);
-    bEditar()
     funcoesPadroes();
   });
 }
