@@ -37,7 +37,43 @@ function alterarSituacao(situacao, planeta) {
         alert(`Está situação (${situacao}) já está definida! Selecione outra!`);
     }
     else {
-        alert(`Situação alterada com sucesso! De "${planeta.situacao}" para "${situacao}"`);
+        alert(`Situação do planeta ${planeta.nome} alterada com sucesso! De "${planeta.situacao}" para "${situacao}"`);
         planeta.situacao = situacao;
     }
+}
+//ADICIONAR SATELITE
+function addSatelite(nomeSatelite, planeta) {
+    planeta.satelites.push(nomeSatelite);
+    alert(`Foi adicionado o satelite ${nomeSatelite} ao planeta ${planeta.nome}`);
+}
+//REMOVER SATELITE
+function removeSatelite(nomeSatelite, planeta) {
+    let index = planeta.satelites.indexOf(nomeSatelite);
+    if (index > -1) {
+        alert(`Foi removido o satelite ${nomeSatelite} do planeta ${planeta.nome}`);
+        planeta.satelites.slice(index, 1);
+    }
+    else {
+        alert(`Satelite ${nomeSatelite} não encontrado no planeta ${planeta.nome}`);
+    }
+}
+//LISTA TDS OS PLANETAS CADASTRADOS
+function listarPlanetas() {
+    let txtPlanetas = '';
+    arrayPlanetas.forEach(el => {
+        let txtSatelites = "";
+        el.satelites.forEach(s => {
+            txtSatelites += ` - ${s}`;
+        });
+        txtPlanetas += `
+    Nome: ${el.nome}
+    Coordenadas: ${el.coordenadas[0]}, ${el.coordenadas[1]}, ${el.coordenadas[2]}, ${el.coordenadas[3]};
+    Situação: ${el.situacao};
+    Satelites: ${txtSatelites}.
+    ---------------------------
+    `;
+    });
+    alert(`Planetas cadastrados:
+  ${txtPlanetas}
+  `);
 }
