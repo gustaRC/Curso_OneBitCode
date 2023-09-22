@@ -110,7 +110,6 @@ function menu1_NovoPlaneta() {
     satelites: string[]
   }
 
-  
   objPlaneta.nome = prompt(`Qual o nome do planeta?`)
 
   objPlaneta.coordenadas[0] = Number(prompt(`Qual a coordenada 1? [X, 0, 0, 0]`))
@@ -134,7 +133,7 @@ function menu1_NovoPlaneta() {
     case "3":
       objPlaneta.situacao = "inabitável"
       break
-    case "2":
+    case "4":
       objPlaneta.situacao = "inexplorado"
       break
     default:
@@ -164,10 +163,132 @@ function menu1_NovoPlaneta() {
 
   if (cadastroConfirm) {
     novoPlaneta(objPlaneta.nome, objPlaneta.coordenadas, objPlaneta.situacao, objPlaneta.satelites)
+  } else {
+    alert(`Ocorreu algum erro! Por favor, tente novamente.`)
   }
 }
 
 //MENU 2 - ALTERAR SITUACAO
 function menu2_AlterarSituacao() {
-  
+  let nomePlaneta = prompt(`Digite o nome do planeta desejado:`)
+  let situacao: string
+  let situacaoDesejada = prompt(`Qual a situação desejada?
+  1 - Habitado
+  2 - Habitável
+  3 - Inabitável
+  4 - Inexplorado`)
+
+  switch (situacaoDesejada) {
+    case "1":
+      situacao = "habitado"
+      break
+    case "2":
+      situacao = "habitável"
+      break
+    case "3":
+      situacao = "inabitável"
+      break
+    case "4":
+      situacao = "inexplorado"
+      break
+    default:
+      alert("Opção invalida!")
+  }
+
+  let confirmacao = confirm(`Deseja confirmar a alteração de situação?
+   - Planeta a ser alterado: ${nomePlaneta}
+   - Situação: ${encontrarPlaneta(nomePlaneta).situacao} -> ${situacao}`)
+
+  if (confirmacao) {
+    switch (situacaoDesejada) {
+      case "1":
+        alterarSituacao("habitado", encontrarPlaneta(nomePlaneta))
+        break
+      case "2":
+        alterarSituacao("habitável", encontrarPlaneta(nomePlaneta))
+        break
+      case "3":
+        alterarSituacao("inabitável", encontrarPlaneta(nomePlaneta))
+        break
+      case "2":
+        alterarSituacao("inexplorado", encontrarPlaneta(nomePlaneta))
+        break
+      default:
+        alert("Ocorreu algum erro!")
+    }
+  } else {
+    alert("Operação cancelada!")
+  }
 }
+
+//MENU 3 - ADICIONAR SATELITE 
+function menu3_AdicionarSatelite() {
+  let nomePlaneta = prompt(`Digite o nome do planeta desejado:`)
+  let nomeSatelite = prompt(`Digite o nome do satelite a ser adicionado:`)
+
+  let confirmacao = confirm(`Deseja inserir o satelite ${nomeSatelite} ao planeta ${nomePlaneta}?`)
+
+  if (confirmacao) {
+    try {
+      addSatelite(nomeSatelite, encontrarPlaneta(nomePlaneta))
+    } catch (error) {
+      alert("Ocorreu algum erro! Tente novamente")
+      menu3_AdicionarSatelite()
+    }
+  } else {
+    alert("Operação cancelada!")
+  }
+}
+
+//MENU 4 - REMOVER SATELITE 
+function menu4_RemoverSatelite() {
+  let nomePlaneta = prompt(`Digite o nome do planeta desejado:`)
+  let nomeSatelite = prompt(`Digite o nome do satelite a ser removido:`)
+
+  let confirmacao = confirm(`Deseja remover o satelite ${nomeSatelite} do planeta ${nomePlaneta}?`)
+
+  if (confirmacao) {
+    try {
+      removeSatelite(nomeSatelite, encontrarPlaneta(nomePlaneta))
+    } catch (error) {
+      alert("Ocorreu algum erro! Tente novamente")
+      menu4_RemoverSatelite()
+    }
+  } else {
+    alert("Operação cancelada!")
+  }
+}
+
+//MENU 5 - LISTAR PLANETAS
+function menu5_ListarPlanetas() {
+  listarPlanetas()
+}
+
+//MENU GERAL
+let menu: string
+do {
+  menu = prompt(`- MENU -
+    1 - Cadastrar planeta
+    2 - Alterar situação
+    3 - Adicionar satelite
+    4 - Remover satelite
+    5 - Listar planetas cadastrados
+    6 - Encerrar aplicação`)
+
+  switch (menu) {
+    case "1":
+      menu1_NovoPlaneta()
+    case "2":
+      menu2_AlterarSituacao()
+    case "3":
+      menu3_AdicionarSatelite()
+    case "4":
+      menu4_RemoverSatelite()
+    case "5":
+      menu5_ListarPlanetas()
+    case "6":
+      alert("Encerrando aplicação...")
+    default:
+      alert("Opção invalida!")
+  }
+} while (menu !== "6")
