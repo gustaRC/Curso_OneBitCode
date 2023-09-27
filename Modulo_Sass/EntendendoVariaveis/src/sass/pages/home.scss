@@ -1,0 +1,85 @@
+.btn1 {
+  width: $width-btn-default;
+  height: $height-btn-default;
+  background-color: $btn-confirm;
+}
+
+.btn2 {
+  width: $width-btn-default;
+  height: $height-btn-default;
+  background-color: $btn-cancel;
+}
+
+
+// NESTING
+.classe1 {
+  color: white;
+
+	ul{
+		background-color: red;
+	}
+
+	li{
+		background-color: blue;
+  }
+
+  button {
+		background-color: green;
+		color: white;
+	
+		&:hover {
+			cursor:pointer;
+      background-color: aqua;
+		}
+	}
+}
+
+.txtBuy {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $primary-color;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: $secondary-color;
+}
+
+//MIXIN
+@mixin novoMixin($color, $font-size){
+  color: $color;
+  font-size: $font-size;
+}
+
+.mixin-div {
+  h1 {
+    @include novoMixin(#bd2ce9, 30px)
+  };
+  p {
+    @include novoMixin((#e92c55), 18px)
+  };
+}
+
+//HERANÇAS E EXTENDS
+.div-herancaEextends {
+  background-color: #474747;
+  padding: 15px 10px;
+}
+
+//herança
+.btnHE {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  padding: 5px;
+
+  &.btnHE-vermei {
+    background-color: red;
+  }
+}
+
+//extend
+.btnHE-azul {
+  @extend .btnHE;
+  background-color: blue;
+}

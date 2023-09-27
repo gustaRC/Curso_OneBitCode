@@ -1,0 +1,70 @@
+.btn1 {
+  width: 100px;
+  height: 30px;
+  background-color: #2ce95b;
+}
+
+.btn2 {
+  width: 100px;
+  height: 30px;
+  background-color: #e92c55;
+}
+
+.classe1 {
+  color: white;
+}
+.classe1 ul {
+  background-color: red;
+}
+.classe1 li {
+  background-color: blue;
+}
+.classe1 button {
+  background-color: green;
+  color: white;
+}
+.classe1 button:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.txtBuy {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff4043;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #ff4;
+}
+
+.mixin-div h1 {
+  color: #bd2ce9;
+  font-size: 30px;
+}
+.mixin-div p {
+  color: #e92c55;
+  font-size: 18px;
+}
+
+.div-herancaEextends {
+  background-color: #474747;
+  padding: 15px 10px;
+}
+
+.btnHE, .btnHE-azul {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  padding: 5px;
+}
+.btnHE.btnHE-vermei, .btnHE-vermei.btnHE-azul {
+  background-color: red;
+}
+
+.btnHE-azul {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
