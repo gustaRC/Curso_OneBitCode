@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bodyBK {
+  background-image: url(../../imgs/backgroundLp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.formBody {
+  background-color: rgba(19, 18, 18, 0.9450980392);
+  width: 460px;
+  border-radius: 5px;
+}
+.formBody .btn-custom {
+  border: 1px solid #ff0043;
+  color: #ff0043;
+}
+.formBody .btn-custom:hover {
+  background-color: #ff0043;
+  color: #fff;
+}
+.formBody .imgForm {
+  width: 180px;
+}
+
+.form-check-input:checked {
+  background-color: #ff0043;
+  border-color: #ff0043;
+}
+
+@media (max-width: 1350px) {
+  .bodyBK {
+    background-position: center;
+    background-repeat: unset;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
